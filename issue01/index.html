@@ -12,18 +12,22 @@
      var channel = new HydnaChannel('issue01.hydna.net', 'rw');
 
      channel.onopen = function(event) {
-     document.getElementById('label').innerHTML = 'Channel opened';
-     console.log(event);
+       document.getElementById('label').innerHTML = 'Channel opened';
+       console.log(event);
+     };
+
+     channel.onmessage = function(event) {
+       console.log(event);
      };
 
      channel.onclose = function(event) {
-     document.getElementById('label').innerHTML = 'Channel closed';
-     console.log(event);
- };
+       document.getElementById('label').innerHTML = 'Channel closed';
+       console.log(event);
+     };
 
      channel.onerror = function(event) {
-     document.getElementById('label').innerHTML = 'Error occured';
-     console.log(event);
+       document.getElementById('label').innerHTML = 'Error occured';
+       console.log(event);
      };
 </script>
 </body>
