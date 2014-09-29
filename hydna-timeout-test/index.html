@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Hydna example</title>
+<script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/hydna/1.0.0/hydna.js"></script>
+</head>
+<body>
+<div id='label' style='font-size: 50px'></div>
+<script type="text/javascript">
+     var channel = new HydnaChannel('issue01.hydna.net', 'rw');
+
+     channel.onopen = function(event) {
+     document.getElementById('label').innerHTML = 'Channel opened';
+     console.log(event);
+     };
+
+     channel.onclose = function(event) {
+     document.getElementById('label').innerHTML = 'Channel closed';
+     console.log(event);
+ };
+
+     channel.onerror = function(event) {
+     document.getElementById('label').innerHTML = 'Error occured';
+     console.log(event);
+     };
+</script>
+</body>
+</html>
