@@ -1,0 +1,99 @@
+@-webkit-keyframes platform-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes platform-shadow-animation {
+  0% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+  50% {
+    transform: translate(-2px, 0) scale(1.02, 1.02);
+  }
+  100% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+@-webkit-keyframes circle-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+@-webkit-keyframes circle-animation-hover {
+  0% {
+
+  }
+  1% {
+    transform: translate(0, 8px);
+  }
+  100% {
+    transform: translate(0, 8px);
+  }
+}
+
+
+#platform {
+  opacity: .35;
+  transform: translate(0, 0);
+  -webkit-transition: all .3s ease-out;
+  -webkit-animation: platform-animation 5s infinite;
+}
+
+#platform-shadow {
+  transform: translate(0, 0) scale(1, 1);
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation:platform-shadow-animation 5s infinite;
+}
+
+
+#platform-group:hover #platform {
+  opacity: .55;
+  -webkit-animation-play-state: paused;
+}
+
+#platform-group:hover #platform-shadow {
+  -webkit-animation-play-state: paused;
+}
+
+.circle .shadow,
+.circle .top,
+.circle .bottom {
+  -webkit-animation: circle-animation 4s infinite;
+  -webkit-animation-delay: 1.8s;
+}
+
+.circle.sec .shadow,
+.circle.sec .top,
+.circle.sec .bottom {
+  -webkit-animation-delay: .6s;
+}
+
+.circle:hover .shadow,
+.circle:hover .top,
+.circle:hover .bottom {
+  -webkit-animation-play-state: paused;
+}
+
+.circle {
+  -webkit-transition: all .3s ease-out;
+}
+
+.circle:hover {
+  transform: translate(0, 8px);
+}

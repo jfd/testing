@@ -1,0 +1,582 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li,
+p {
+    margin: 0 0 15px 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    background: #FFF;
+}
+
+body p {
+    letter-spacing: 0.8px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Testing
+--------------------------------------------------------------------------- */
+
+.main-header {
+    background: #EEE;
+    background: #6EC1D4;
+    background: #BE98D4;
+    background: #51BDB2;
+    /* background: #EEE; */
+    background: #2D3A49 radial-gradient(rgba(106, 138, 180, 0.3), #2D3A49);
+    background: #2D3A49 linear-gradient(rgba(106, 138, 180, 0.3), #2D3A49);
+    background: #2D3A49;
+    background: rgb(68,146,192);
+    background: rgb(31,82,139);
+    background: #7B77E3 linear-gradient(#1F528B, #5B55A2 70%);
+    background: #7B77E3 linear-gradient(#0A5FA2, #5E55A2);
+    background: #7B77E3 linear-gradient(#1F558C, #5E55A2);
+    /* background: #7B77E3 linear-gradient(#1F558C, #5E55A2); */
+    /* background: #11A6D6; */
+    /* background: #7B77E3 linear-gradient(#13C1D3, #7B77E3); */
+    /* background: #7B77E3 linear-gradient(#2D3A49, #7B77E3); */
+    /* background: #2D3A49; */
+    /* background: linear-gradient(#6EC1D4, #51BDB2); */
+    color: #888;
+}
+
+em {
+    font-style: italic;
+}
+
+.navigation .logo a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation nav ul li a {
+    color: #AAA;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-header .hero h1 {
+    color: #FFF;
+}
+
+.main-header .hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+
+.main-header .cta .sign-up a {
+    background: #1EBA62;
+    /* background: #6F5AE3; */
+    /* background: #354B6D; */
+    /* background: #37EA6E; */
+    /* background: #22EA8F; */
+    /* background: #DB4F48; */
+    /* background: #489867; */
+    /* background: #1EBA62; */
+    /* background: #1EA86E; */
+    /* background: #1EA87C; */
+}
+
+.main-header .cta .sign-up p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero .fig {
+    color: #FFF;
+}
+
+.hero .fig span {
+    color: #FFF;
+}
+
+.hero .fig span.sec {
+    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Header
+--------------------------------------------------------------------------- */
+
+.main-header {
+    font-weight: bold;
+    line-height: normal;
+}
+
+.navigation {
+    width: 100%;
+    font-size: 16px;
+    background: #144373 url(../images/logo.png) 20px center no-repeat;
+    background: url(../images/logo.png) 20px center no-repeat;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.navigation > div {
+    display: table;
+}
+
+.navigation .logo {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    height: 100%;
+}
+
+.navigation .logo a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: 600;
+    text-indent: -1000000px;
+}
+
+.navigation nav {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+    height: 100%;
+    padding-right: 20px;
+}
+
+.navigation nav ul li {
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+.navigation nav ul li a {
+    display: block;
+    /* text-transform: uppercase; */
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 4px;
+    transition: background-color 200ms, border-color 200ms, color 200ms;
+}
+
+.navigation nav ul li a.learn-more {
+    /* background: #8472ae; */
+    border-color: #CCC;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation nav ul li.log-in-link {
+    margin-left: 60px;
+}
+
+.navigation nav ul li a:hover {
+    background: #5E55A2;
+    border-color: #5E55A2;
+    color: #FFF;
+}
+
+.main-header .hero {
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.main-header .hero h1 {
+    font-size: 44px;
+    max-width: 680px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.main-header .hero p {
+    max-width: 680px;
+    font-weight: 600;
+}
+
+.main-header .cta {
+    display: table;
+    margin: 80px auto 120px;
+    text-align: left;
+    width: 940px;
+}
+
+.main-header .cta > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-header .cta .sign-up {
+    text-align: left;
+    width: 200px;
+}
+
+.main-header .cta .sign-up a {
+    display: inline-block;
+    font-weight: 700;
+    color: #FFF;
+    padding: 14px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.main-header .cta .sign-up p {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.hero .fig {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto 130px;
+}
+
+.hero .fig img,
+.hero .fig object {
+    height: auto;
+    width: 60%;
+}
+
+.hero .fig > div {
+    position: absolute;
+    text-align: left;
+    left: 50%;
+    margin-left: 270px;
+}
+
+.hero .fig span {
+    font-size: 13px;
+    display: block;
+    margin-top: 6px;
+    line-height: 150%;
+}
+
+.hero .fig span.sec {
+    margin-top: 8px;
+}
+
+.hero .fig .anatomy {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 200px;
+    font-size: 20px;
+    color: #9996F2;
+    line-height: 140% !important;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.hero .fig .routing {
+    top: 253px;
+    margin-left: 0;
+    left: 0;
+    width: 180px;
+}
+
+.hero .fig .transports {
+    top: -7px;
+}
+
+.hero .fig .behaviors {
+    top: 304px;
+}
+
+.customers {
+}
+
+.customers li {
+    display: inline-block;
+    margin: 30px;
+}
+
+/* Sections
+--------------------------------------------------------------------------- */
+
+.sections {
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.sections > section {
+    padding: 60px;
+}
+
+.sections > section:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.sections > section:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.sections > section > *:last-child {
+    margin-bottom: 0px;
+}
+
+/* Intro */
+
+.intro {
+    margin: 0 auto;
+    background: #FFF;
+    /* text-align: center; */
+    padding: 80px 60px !important;
+}
+
+.intro h1 {
+    font-weight: 700;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.intro p {
+    font-weight: 400;
+    font-size: 22px;
+    max-width: 600px;
+    line-height: 130%;
+    margin: 0;
+}
+
+/* Dark */
+
+.dark {
+    background: #444;
+}
+
+/* Footer
+--------------------------------------------------------------------------- */
+
+.main-footer {
+    color: #777;
+    padding: 40px;
+    background: #EEE;
+    font-weight: normal;
+    font-size: 14px;
+    position: relative;
+}
+
+.main-footer span {
+    position: absolute;
+    right: 30px;
+}
+
+
+/* Clear Floats
+--------------------------------------------------------------------------- */
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    display: inline-block;
+}
+
+/* Hide from IE Mac \*/
+.clear {
+    display: block;
+}
+/* End hide from IE Mac */
+
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.white-popup h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.white-popup p {
+    color: #999;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.white-popup .form {
+    display: table;
+    width: 100%;
+    background: #EEE;
+    border-spacing: 20px;
+}
+
+.white-popup .form > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.white-popup .form .input input {
+    background: #FFF;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 10px;
+    width: 90%;
+}
+
+.white-popup .form .submit {
+    text-align: center;
+}
+
+.white-popup .form .submit a {
+    background: #8472ae;
+    padding: 10px 18px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: normal;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.main-content {
+    width: 940px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 130%;
+}
+
+.main-content p {
+    line-height: 140%;
+}
+
+.split {
+    display: table;
+    width: 100%;
+    margin: 0 -40px 30px;
+    border-spacing: 40px;
+}
+
+.split .text *:last-child {
+    margin: 0;
+}
+
+.split > div {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.split .fig {
+    background: #EEE;
+}
+
+/* Remote demo */
+
+#remote-demo {
+    position: relative;
+    overflow: hidden;
+}
+
+#remote-demo .remote-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#remote-demo .remote-slide span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    line-height: 160%;
+    transform: translateY(-50%);
+}
+
+#remote-demo .remote-slide code {
+    display: inline-block;
+    background: #DDD;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+#remote-demo .slide-2 {
+    background: #DDD;
+}
+
+#remote-demo .slide-3 {
+    background: #CCC;
+}
+
+#remote-demo .remote-slide:not(.slide-1) {
+    display: none;
+}
